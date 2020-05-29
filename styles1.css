@@ -16,7 +16,7 @@ header{
 }
 #logo{
     width: 20%;
-    display: flex;
+    float: left;
     margin-top: 30px;
 }
 
@@ -37,7 +37,7 @@ header{
     color: black;
 }
 #subheader{
-    margin: 10px;
+    margin: 15px;
 }
 #clases{
     display: grid;
@@ -82,12 +82,20 @@ header{
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 10px;
         padding: 10px;
-        margin: 10px;
+        margin-top: 50px;
         width: 95%;
     }
     #subheader{
-        margin: 100px;
         max-width: 900px;
     }
+    
+    main{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        padding: 10px;
+    }
+
 
 }
