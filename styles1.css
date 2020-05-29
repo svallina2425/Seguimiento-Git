@@ -1,12 +1,28 @@
 header{
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #F9F0DA;
+    overflow:hidden;
+    margin-bottom:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+.wrapper{
+    margin: auto;
+    overflow:hidden;
 }
 #logo{
     width: 20%;
+    display: flex;
+    margin-top: 30px;
 }
+
 #options{
     text-decoration: none;
     display: flex;
+    float: right;
+    align-items: center;
 }
 #options li {
     display: inline;
@@ -15,16 +31,22 @@ header{
     text-decoration: none;
     text-transform:uppercase;
     padding: 20px;
+    display:inline-block;
+    color: black;
 }
 #clases{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-        padding: 10px;
-        margin: 10px;
-        width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
     }
 
-.IMG img{
+    figure{
+        margin: 0em;
+        width: 100%;
+    }
+    .IMG img{
         width: 100%;
     }
