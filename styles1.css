@@ -1,3 +1,6 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
 header{
     display: flex;
     flex-direction: row;
@@ -5,7 +8,6 @@ header{
     background-color: #F9F0DA;
     overflow:hidden;
     margin-bottom:20px;
-    font-family: Arial, Helvetica, sans-serif;
     align-items: center;
 }
 .wrapper{
@@ -34,6 +36,9 @@ header{
     display:inline-block;
     color: black;
 }
+#subheader{
+    margin: 10px;
+}
 #clases{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -51,6 +56,11 @@ header{
         width: 100%;
     }
 
+    footer{
+        background-color: #F9F0DA;
+        width: 100%;
+    }
+
 
 @media (min-width: 600px) {
     #clases{
@@ -61,16 +71,23 @@ header{
         margin: 10px;
         width: 90%;
     }
+    #subheader{
+        margin: 50px;
+    }
 
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     #clases{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 10px;
         padding: 10px;
         margin: 10px;
-        width: 90%;
+        width: 95%;
+    }
+    #subheader{
+        margin: 100px;
+        max-width: 900px;
     }
 
 }
